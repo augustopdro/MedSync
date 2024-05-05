@@ -13,5 +13,5 @@ import java.util.Optional;
 public interface MedicoRepository extends JpaRepository<Medico, Long> {
 
     @Query("SELECT u FROM Paciente u WHERE u.cpf = ?1")
-    Optional<Paciente> buscarPaciente(String email);
+    Paciente buscarPaciente(String cpf);
 }

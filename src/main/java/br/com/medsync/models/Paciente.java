@@ -56,7 +56,6 @@ public class Paciente implements UserDetails {
     private String comorbidades;
 
     @NotNull
-    @Pattern(regexp = "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$", message = "Cpf inválido.")
     @Column(nullable = false, unique = true)
     private String cpf;
 
